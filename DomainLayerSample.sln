@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1A46A744-F0A4-4A7F-B7C9-5AA6E7DFC201}"
+	ProjectSection(SolutionItems) = preProject
+		DomainLayerSample.vsmdi = DomainLayerSample.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{A865BDEC-0447-4DEC-99E7-6ECC5BDBAF76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL Scripts", "SQL Scripts", "{DB8ADA38-FC4D-4E3F-91A8-D362245D8174}"
+	ProjectSection(SolutionItems) = preProject
+		CreateDatabase.sql = CreateDatabase.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{5E8CEBC0-3477-4EF1-8D19-05CC89D9A814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Tests", "Domain.Tests\Domain.Tests.csproj", "{BAC34E00-A0DF-4AD1-8AC2-A367DD646DD4}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://r2d2.protk.com:8080/tfs/proteck
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TestApp\\TestApp.csproj
+		SccProjectName1 = TestApp
+		SccLocalPath1 = TestApp
+		SccProjectUniqueName2 = Domain\\Domain.csproj
+		SccProjectName2 = Domain
+		SccLocalPath2 = Domain
+		SccProjectUniqueName3 = Domain.Tests\\Domain.Tests.csproj
+		SccProjectName3 = Domain.Tests
+		SccLocalPath3 = Domain.Tests
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = DomainLayerSample.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A865BDEC-0447-4DEC-99E7-6ECC5BDBAF76}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{A865BDEC-0447-4DEC-99E7-6ECC5BDBAF76}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{A865BDEC-0447-4DEC-99E7-6ECC5BDBAF76}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{A865BDEC-0447-4DEC-99E7-6ECC5BDBAF76}.Debug|x86.ActiveCfg = Debug|x86
+		{A865BDEC-0447-4DEC-99E7-6ECC5BDBAF76}.Debug|x86.Build.0 = Debug|x86
+		{A865BDEC-0447-4DEC-99E7-6ECC5BDBAF76}.Release|Any CPU.ActiveCfg = Release|x86
+		{A865BDEC-0447-4DEC-99E7-6ECC5BDBAF76}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{A865BDEC-0447-4DEC-99E7-6ECC5BDBAF76}.Release|Mixed Platforms.Build.0 = Release|x86
+		{A865BDEC-0447-4DEC-99E7-6ECC5BDBAF76}.Release|x86.ActiveCfg = Release|x86
+		{A865BDEC-0447-4DEC-99E7-6ECC5BDBAF76}.Release|x86.Build.0 = Release|x86
+		{5E8CEBC0-3477-4EF1-8D19-05CC89D9A814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E8CEBC0-3477-4EF1-8D19-05CC89D9A814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E8CEBC0-3477-4EF1-8D19-05CC89D9A814}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5E8CEBC0-3477-4EF1-8D19-05CC89D9A814}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5E8CEBC0-3477-4EF1-8D19-05CC89D9A814}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5E8CEBC0-3477-4EF1-8D19-05CC89D9A814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E8CEBC0-3477-4EF1-8D19-05CC89D9A814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E8CEBC0-3477-4EF1-8D19-05CC89D9A814}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5E8CEBC0-3477-4EF1-8D19-05CC89D9A814}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5E8CEBC0-3477-4EF1-8D19-05CC89D9A814}.Release|x86.ActiveCfg = Release|Any CPU
+		{BAC34E00-A0DF-4AD1-8AC2-A367DD646DD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC34E00-A0DF-4AD1-8AC2-A367DD646DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC34E00-A0DF-4AD1-8AC2-A367DD646DD4}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BAC34E00-A0DF-4AD1-8AC2-A367DD646DD4}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BAC34E00-A0DF-4AD1-8AC2-A367DD646DD4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BAC34E00-A0DF-4AD1-8AC2-A367DD646DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC34E00-A0DF-4AD1-8AC2-A367DD646DD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC34E00-A0DF-4AD1-8AC2-A367DD646DD4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BAC34E00-A0DF-4AD1-8AC2-A367DD646DD4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BAC34E00-A0DF-4AD1-8AC2-A367DD646DD4}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

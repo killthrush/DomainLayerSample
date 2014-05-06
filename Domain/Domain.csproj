@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5E8CEBC0-3477-4EF1-8D19-05CC89D9A814}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Domain</RootNamespace>
+    <AssemblyName>Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ProTeck.Core">
+      <HintPath>R:\ProTeck.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\Address.cs" />
+    <Compile Include="BaconSlab.cs" />
+    <Compile Include="BarOfSoap.cs" />
+    <Compile Include="Base\IBeverage.cs" />
+    <Compile Include="Base\IBeverageContainer.cs" />
+    <Compile Include="Base\IHasName.cs" />
+    <Compile Include="Base\IHasColor.cs" />
+    <Compile Include="Base\IFoodContainer.cs" />
+    <Compile Include="Base\IFood.cs" />
+    <Compile Include="Base\IHouseholdObject.cs" />
+    <Compile Include="Base\DirtRatingImprovementEvent.cs" />
+    <Compile Include="Base\ItemsAreTotallyCleanEvent.cs" />
+    <Compile Include="Base\IWashableObject.cs" />
+    <Compile Include="Base\Color.cs" />
+    <Compile Include="Base\WashableObjectExtensions.cs" />
+    <Compile Include="Base\IUtensil.cs" />
+    <Compile Include="Base\ICanWashStuff.cs" />
+    <Compile Include="Base\ICanBeLocked.cs" />
+    <Compile Include="Base\IPreventsThingsInsideFromGettingOut.cs" />
+    <Compile Include="Base\WashableContainerObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\WashableObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\WorldObject.cs" />
+    <Compile Include="BagOfHolding.cs" />
+    <Compile Include="Beer.cs" />
+    <Compile Include="FluentInterface\DispenseBeerOperator.cs" />
+    <Compile Include="FluentInterface\DrinkOperator.cs" />
+    <Compile Include="FluentInterface\EatOperator.cs" />
+    <Compile Include="Exceptions\BeverageException.cs" />
+    <Compile Include="Exceptions\NameException.cs" />
+    <Compile Include="Fridge.cs" />
+    <Compile Include="FineChinaTeacup.cs" />
+    <Compile Include="Exceptions\LockedException.cs" />
+    <Compile Include="IceCream.cs" />
+    <Compile Include="Exceptions\BuildingCodeException.cs" />
+    <Compile Include="Exceptions\InappropriateBehaviorException.cs" />
+    <Compile Include="FluentInterface\PutOperator.cs" />
+    <Compile Include="Yard.cs" />
+    <Compile Include="Exceptions\StuckException.cs" />
+    <Compile Include="House.cs" />
+    <Compile Include="Properties\ProjectAssemblyInfo.cs" />
+    <Compile Include="WideWorld.cs" />
+    <Compile Include="Base\DirtRating.cs" />
+    <Compile Include="Dishwasher.cs" />
+    <Compile Include="Dog.cs" />
+    <Compile Include="Elephant.cs" />
+    <Compile Include="Exceptions\CapacityException.cs" />
+    <Compile Include="Exceptions\TrichinosisException.cs" />
+    <Compile Include="Exceptions\LawsOfPhysicsViolationException.cs" />
+    <Compile Include="Exceptions\DishwasherException.cs" />
+    <Compile Include="Fork.cs" />
+    <Compile Include="FryingPan.cs" />
+    <Compile Include="Glass.cs" />
+    <Compile Include="Avatar.cs" />
+    <Compile Include="Base\ContainerObject.cs" />
+    <Compile Include="Base\IWorldObject.cs" />
+    <Compile Include="Base\IIsOutdoors.cs" />
+    <Compile Include="KitchenCabinet.cs" />
+    <Compile Include="Knife.cs" />
+    <Compile Include="Plate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\WideWorldRepository.cs" />
+    <Compile Include="Repository\FindByIdQuery.cs" />
+    <Compile Include="Repository\IWideWorldRepository.cs" />
+    <Compile Include="Repository\ISqlQuery.cs" />
+    <Compile Include="SphereFlake.cs" />
+    <Compile Include="Spoon.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
