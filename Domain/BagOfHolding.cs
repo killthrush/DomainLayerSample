@@ -4,7 +4,7 @@ namespace Domain
 {
     /// <summary>
     /// A magic bag for which to store large quanties of gold, suits of armor, and dozens of halberds.
-    /// Like the Doctor's phonebooth, it's larger on the inside!
+    /// Like the TARDIS, it's larger on the inside!
     /// </summary>
     public class BagOfHolding : ContainerObject, IPreventsThingsInsideFromGettingOut
     {
